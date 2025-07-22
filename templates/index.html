@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}Home – My Flask App{% endblock %}
+
+{% block content %}
+  <h1>Recent Posts</h1>
+  {% if posts %}
+    <div class="list-group">
+      {% for post in posts %}
+        <a href="#" class="list-group-item list-group-item-action mb-2">
+          <h5 class="mb-1">{{ post.title }}</h5>
+          <p class="mb-1">{{ post.body[:200] }}{% if post.body|length > 200 %}…{% endif %}</p>
+          <small>By {{ post.author.username }}</small>
+        </a>
+      {% endfor %}
+    </div>
+  {% else %}
+    <p class="text-muted">No posts yet.</p>
+  {% endif %}
+{% endblock %}
