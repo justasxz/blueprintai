@@ -22,3 +22,5 @@ if __name__ == '__main__':
     app.run(debug=True)
     print("Hello")
     print("Goodbye From Justas PC")
+    print("Adding login")
+    print("Added template")
