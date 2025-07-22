@@ -23,3 +23,4 @@ if __name__ == '__main__':
     print("Hello")
     print("Goodbye From Justas PC")
     print("Adding login")
+    print("Added template")
